@@ -1,0 +1,52 @@
+/* Home.css */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .home h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .home p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 600px;
+    line-height: 1.6;
+  }
+  
+  /* Railway image styling */
+  .railway-image {
+    width: 100%;
+    max-width: 600px; /* Limits the image size */
+    height: auto;
+    margin-bottom: 30px; /* Adds space between image and text */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+  }
+  
+  @media (max-width: 768px) {
+    .home h1 {
+      font-size: 2rem;
+    }
+  
+    .home p {
+      font-size: 1rem;
+    }
+  
+    .railway-image {
+      max-width: 100%; /* Adjusts image size for smaller screens */
+    }
+  }
+  

@@ -1,0 +1,72 @@
+/* Navbar Styling */
+nav {
+    background-color: #fff; /* Light background color for contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect for depth */
+    padding: 15px 0; /* Slightly increased padding for better spacing */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures navbar stays on top */
+    width: 100%; /* Full width for better layout on all screens */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 20px; /* Increased margin for better spacing between items */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-size: 1.3rem; /* Slightly larger font size for readability */
+    color: #007bff;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Added border transition for a cleaner underline effect */
+    padding-bottom: 5px;
+  }
+  
+  nav ul li a:hover {
+    color: #0056b3; /* Darker blue on hover for interactivity */
+    border-bottom: 2px solid #0056b3; /* Underline effect on hover */
+  }
+  
+  nav ul li a.active {
+    color: #4caf50; /* Highlight the active link with a green color */
+    font-weight: bold;
+    border-bottom: 2px solid #4caf50; /* Underline the active link */
+  }
+  
+  /* Responsive for small screens */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column; /* Stack links vertically on small screens */
+      justify-content: space-between; /* Better spacing for vertical layout */
+    }
+  
+    nav ul li {
+      margin: 10px 0; /* Vertical margin for each item */
+    }
+  
+    nav ul li a {
+      font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  /* Extra small screens (mobile phones in portrait mode) */
+  @media (max-width: 480px) {
+    nav ul li a {
+      font-size: 1.1rem; /* Further reduction in font size for smaller screens */
+      padding-bottom: 3px;
+    }
+  
+    nav ul li {
+      margin: 8px 0;
+    }
+  }
+  

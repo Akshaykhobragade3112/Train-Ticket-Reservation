@@ -1,0 +1,138 @@
+/* Dashboard.css */
+
+.dashboard {
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #f0f4f8; /* Light background for a modern look */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .dashboard h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+  }
+  
+  .dashboard form {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+  
+  @media (max-width: 1024px) {
+    .dashboard form {
+      max-width: 90%; /* More flexible width on smaller desktops and tablets */
+    }
+  
+    .dashboard h1 {
+      font-size: 2rem; /* Smaller font size for better readability on smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard {
+      padding: 10px; /* Less padding for more space on smaller screens */
+    }
+  
+    .dashboard h1 {
+      font-size: 1.8rem; /* Further reduce font size for small devices */
+      margin-bottom: 10px; /* Less space between elements */
+    }
+  
+    .dashboard form {
+      width: 90%; /* Consistent with overall responsive adjustments */
+    }
+  }
+  
+  /* BookingForm specific styling */
+  .booking-form {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 600px; /* Max width to align with form settings */
+  }
+  
+  .booking-form label {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .booking-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .booking-form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .booking-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* SeatMap specific styling */
+  .seat-map {
+    width: 100%;
+    max-width: 800px; /* Consistent max-width */
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .seat-map .row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .seat-map .seat {
+    width: 50px;
+    height: 50px;
+    background-color: #90ee90;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .seat-map .seat.booked {
+    background-color: #ff6347;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .seat-map {
+      width: 90%;
+    }
+  
+    .seat-map .seat {
+      width: 40px; /* Smaller seats for smaller screens */
+      height: 40px;
+    }
+  }
+  

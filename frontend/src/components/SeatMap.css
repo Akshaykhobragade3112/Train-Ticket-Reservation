@@ -1,0 +1,81 @@
+/* SeatMap.css */
+
+.seat-map {
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9; /* Light background to highlight the seat map */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .seat-map h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+  }
+  
+  /* Using CSS Grid for seat alignment */
+  .seat-map .grid-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 seats per row */
+    gap: 10px; /* Space between seats */
+    justify-items: center; /* Center seats horizontally */
+    margin: 20px 0;
+  }
+  
+  .seat-map .seat {
+    width: 60px;
+    height: 60px;
+    background-color: #90ee90; /* Available seat color */
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .seat-map .seat.booked {
+    background-color: #ff6347; /* Booked seat color */
+    color: white;
+  }
+  
+  .seat-map .seat:hover {
+    cursor: pointer;
+    background-color: #87cefa; /* Hover effect for available seats */
+  }
+  
+  @media (max-width: 768px) {
+    .seat-map .grid-container {
+      grid-template-columns: repeat(4, 1fr); /* Adjust to 4 seats per row on smaller screens */
+      gap: 8px;
+    }
+  
+    .seat-map .seat {
+      width: 50px;
+      height: 50px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .seat-map .grid-container {
+      grid-template-columns: repeat(3, 1fr); /* Adjust to 3 seats per row for small screens */
+      gap: 5px;
+    }
+  
+    .seat-map .seat {
+      width: 40px;
+      height: 40px;
+      font-size: 0.8rem;
+    }
+  }
+  
