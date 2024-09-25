@@ -10,7 +10,7 @@ function BookingForm({ onBookingComplete }) {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/seats/book', { seatCount });
+      const response = await axios.post('https://train-ticket-reservation-backend.onrender.com/api/seats/book', { seatCount });
       setMessage(response.data.message);
       setBookedSeats(response.data.bookedSeats);
       onBookingComplete();  // Notify parent component to refresh the seat map
