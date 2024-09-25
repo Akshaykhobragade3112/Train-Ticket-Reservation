@@ -9,7 +9,7 @@ function SeatMap({ refreshSeats }) {
     // Fetch seat data when the component mounts or refreshSeats changes
     const fetchSeats = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/seats');
+        const response = await axios.get('https://train-ticket-reservation-backend.onrender.com/api/seats');
         setSeats(response.data.seats);
       } catch (error) {
         console.error('Error fetching seat data', error);
